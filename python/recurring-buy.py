@@ -23,8 +23,6 @@ if os.path.exists("config.json"):
     apiurl = api_settings[0]['API-URL']
 
     cmc_key = api_settings[1]['Key']
-    cmc_b64secret = api_settings[1]['Secret']
-    cmc_passphrase = api_settings[1]['Passphrase']
     cmc_apiurl = api_settings[1]['API-URL']
 
     for the_schedule in schedule_settings:
