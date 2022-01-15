@@ -1,4 +1,5 @@
 # Coinbase Pro Recurring Buy Bot (Buy Top Market Cap Coins Version!)
+THIS READ ME IS NOT YET UPDATED FROM THE ORIGINAL
 
 Have you ever wanted to automate recurring purchases via Coinbase Pro instead of Coinbase? I did too, so I built a Bot to do it! The Bot can be setup to make recurring purchases weekly or every X number of days/seconds. Funds can be automatically added from your default funding account in Coinbase Pro or from Coinbase. Notifications about buys and funding can be sent to a Discord channel via webhook.
 
