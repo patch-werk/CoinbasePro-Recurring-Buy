@@ -1,0 +1,48 @@
+{
+    "API" : [
+        {
+            "Type" : "coinbase",
+            "Data" : {
+                "Key" : "KEY",
+                "Secret" : "SECRET",
+                "Passphrase" : "PASS",
+                "API-URL" : "https://api.pro.coinbase.com"
+            }
+        },
+        {
+            "Type" : "coinmarketcap",
+            "Data" : {
+                "Key" : "KEY",
+                "API-URL" : "https://pro-api.coinmarketcap.com"
+            }
+        }
+    ],
+    "Schedule" : [
+        {
+            "Scheduled-Run" : "seconds",
+            "Day" : "saturday",
+            "Time" : "11:36",
+            "Repeat-Time" : 10
+        }
+    ],
+    "Funding" : [
+        {
+            "Enable-Funding" : true,
+            "Currency" : "USD",
+            "Max-Fund" : 100,
+            "Fund-Source" : "default",
+            "Total-Buy-Amount": 100
+        }
+    ],
+    "Crypto" : [
+        {
+            "Number-Of-Coins-To-Buy" : 7
+        }
+    ],
+    "Alerts" : [
+        {
+            "Alerts-Enabled" : true,
+            "Discord-Webhook" : "DISCORD_WEBHOOK_URL"
+        }
+    ]
+}

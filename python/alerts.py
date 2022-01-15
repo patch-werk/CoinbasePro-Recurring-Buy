@@ -7,7 +7,7 @@ from discord import Webhook, RequestsWebhookAdapter
 
 class alert_module:
     def __init__(self):
-        configFile = '/config/config.json'
+        configFile = 'config.json'
         with open(configFile,'r') as of:
             self.data = json.load(of)
     
