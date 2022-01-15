@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import os, sys
+import time
 import json
 import math
 import coinbasepro, schedule, time
@@ -155,7 +156,8 @@ if os.path.exists("config.json"):
             try:
                 buy = auth_client.place_market_order(product_id=buy_pair, side="buy", funds=buy_amount)
                 successfully_bought += 1
-                # Get Order details
+                # Get Order details. Sleep first because it seems if done right away it cant find the order just executed.
+                time.sleep(4)
                 order_id = buy['id']
                 order_details = auth_client.get_order(order_id=order_id)
                 crypto_bought = order_details['filled_size']
