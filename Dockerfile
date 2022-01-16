@@ -10,7 +10,7 @@ COPY ./python/ .
 
 ENV TZ="America/New_York"
 
-VOLUME [ "/config" ]
+VOLUME [ "path/to/python/folder" ]
 
 CMD python3 ./recurring-buy.py
 
